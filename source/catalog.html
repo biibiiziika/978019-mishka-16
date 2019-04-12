@@ -5,19 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<header class="page-header">
-  <a class="page-header__logo">
-    <img class="page-header__logo-image" src="http://placehold.it/150x100">
+<header class="header">
+  <a class="header__logo">
+    <img class="header__logo-image" src="http://placehold.it/150x100">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+  <nav class="navigation">
+    <button class="navigation__toggle" type="button">Открыть меню</button>
+    <div class="navigation__wrapper">
+      <ul class="navigation__list site-list">
+        <li class="site-list__item site-list__item">
+          <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
+        <li class="site-list__item--active">
+          <a>Каталог товаров</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Записаться</a>
@@ -32,8 +32,8 @@
     </div>
   </nav>
 </header>
-<main class="page-main__catalog">
-  <div class="catalog-wrapper"
+<main class="main__catalog">
+  <div class="catalog">
   <h1 class="catalog__title">Каталог товаров</h1>
   <ul class="catalog__list">
     <li class="catalog__item">
@@ -49,35 +49,41 @@
       </article>
     </li>
     <li class="catalog__item">
-      <article class="catalog__item--description">
+      <article class="catalog__item catalog__item--description">
         <a href="#">
           <img src="http://placehold.it/150x100">
         </a>
-        <h2 class="catalog__item--name">
+        <h2 class="catalog__item__name">
           <a href="#">Корзинка для белья</a>
         </h2>
-        <p class="catalog__item--details">Диаметр 15 см, высота 10 см</p>
-        <span class="catalog__item--price">690 руб.</span>
+        <p class="catalog__item__details">Диаметр 15 см, высота 10 см</p>
+        <span class="catalog__item__price">690 руб.</span>
       </article>
     </li>
     <li class="catalog__item">
-      <article class="catalog__item--description">
+      <article class="catalog__item catalog__item--description">
         <a href="#">
           <img src="http://placehold.it/150x100">
         </a>
-        <h2 class="catalog__item--name">
+        <h2 class="catalog__item__name">
           <a href="#">Большая корзинка для игрушек</a>
         </h2>
-        <p class="catalog__item--details">Диаметр 30 см, высота 30 см</p>
-        <span class="catalog__item--price">1 500 руб.</span>
+        <p class="catalog__item__details">Диаметр 30 см, высота 30 см</p>
+        <span class="catalog__item__price">1 500 руб.</span>
       </article>
     </li>
   </ul>
   </div>
+  <div class="video">
+    <h2 class="video video--name">Процесс производства</h2>
+    <video></video>
+    <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <button class="video__button">Сделать заказ</button>
+  </div>
 </main>
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <div class="page-footer__social social">
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
@@ -90,7 +96,7 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
