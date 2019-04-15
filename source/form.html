@@ -6,7 +6,7 @@
 </head>
 <body>
 <header class="header">
-  <a class="header__logo">
+  <a href="index.html" class="header__logo">
     <img class="header__logo-image" src="http://placehold.it/150x100">
   </a>
   <nav class="navigation">
@@ -32,7 +32,82 @@
     </div>
   </nav>
 </header>
-<main></main>
+<main>
+  <div class="form-order">
+  <h1 class="form__title">Вязание на заказ</h1>
+  <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания!
+  Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  <section class="form__filters">
+    <form method="get" action="https://echo.html.ru">
+      <fieldset class="form__filters__type">
+        <legend class="form__filters__type form__filters__type__name">Тип</legend>
+        <ul class="form__filters__type form__filters__type__list">
+          <li class="form__filters__type__item">
+            <input type="radio" name="type__item" value="accessory">
+            Аксессуар для интерьера
+          </li>
+          <li class="form__filters__type__item">
+            <input type="radio" name="type__item" value="toy">
+            Детская игрушка
+          </li>
+        </ul>
+      </fieldset>
+      <span>Цвет</span>
+      <ul class="form__filters__color form__filters__color__list">
+        <li class="form__filters__color form__filters__color__item">
+          <input class="form__filters__color__item--white" type="checkbox" name="white">
+          Белый
+        </li>
+        <li class="form__filters__color form__filters__color__item">
+          <input class="form__filters__color__item--grey" type="checkbox" name="grey">
+          Серый
+        </li>
+        <li class="form__filters__color form__filters__color__item">
+          <input class="form__filters__color__item--tiffany" type="checkbox" name="tiffany">
+          "Тиффани"
+        </li>
+        <li class="form__filters__color form__filters__color__item">
+          <input class="form__filters__color__item--black" type="checkbox" name="black">
+          Черный
+        </li>
+        <li class="form__filters__color form__filters__color__item">
+          <input class="form__filters__color__item--pink" type="checkbox" name="pink">
+          Розовый
+        </li>
+        <li class="form__filters__color form__filters__color__item">
+          <input class="form__filters__color__item--orange" type="checkbox" name="orange">
+          Оранжевый
+        </li>
+      </ul>
+      <div class="info-client">
+        <p class="info-client__name">
+          <label>ФИО</label>
+          <label>Имя:</label>
+          <input class="info-client__first-name" type="text" name="first-name" placeholder="Введит ваше имя">
+          <label>Фамилия:</label>
+          <input class="info-client__surname" type="text" name="surname" placeholder="Введите фамилию">
+          <label>Отчество:</label>
+          <input class="info-client__second-name" type="text" name="second-name" placeholder="Отчество, если желаете">
+        </p>
+        <p class="info-client__contacts">
+          <label>Тел:</label>
+          <input class="info-client__phone-number" type="tel" name="phone-number" placeholder="+7 XXX XX XX">
+          <label>E-mail:</label>
+          <input class="info-client__email" type="text" name="email" placeholder="Ваш Email">
+        </p>
+        <p class="info-client__extra-info">
+          <label>Доп</label>
+          <textarea class="info-client__information" name="text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </p>
+      </div>
+      <small class="prompt">
+        <sup>*</sup> Поля обязательны для заполнения
+      </small>
+      <button class="form-order__button">Отправить заказ</button>
+    </form>
+  </section>
+  </div>
+</main>
 <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer__social social">
@@ -56,3 +131,4 @@
 </footer>
 </body>
 </html>
+
